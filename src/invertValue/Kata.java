@@ -1,4 +1,4 @@
-package invertNumber;
+package invertValue;
 import java.util.Arrays;
 
 public class Kata {
