@@ -1,22 +1,18 @@
-import java.util.Arrays;
-
 public class Solution {
 
     public static void main(String[] args) {
 
-        System.out.println(Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
+        System.out.println(reverseWords(""));
+
     }
 
-    public static int[] twoSum(int[] nums, int target) {
+    public static String reverseWords(String str) {
+        StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[i] + nums[j] == target) {
-                    return new int[]{i, j};
-                }
-            }
+        String[] strs = str.split("\\s");
+        for (int i = strs.length - 1; i >= 0; i--) {
+            sb.append(strs[i]).append(" ");
         }
-        return new int[]{};
+        return String.valueOf(sb.toString());
     }
 }
-
