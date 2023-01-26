@@ -3,7 +3,6 @@ public class Solution {
     public static void main(String[] args) {
 
         System.out.println(reverseWords(""));
-
     }
 
     public static String reverseWords(String str) {
