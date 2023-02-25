@@ -1,4 +1,4 @@
-package palindrome_number;
+package palindromeNumber;
 
 public class Solution {
 
